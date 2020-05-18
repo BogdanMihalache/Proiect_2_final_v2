@@ -1,23 +1,23 @@
 # Proiect_2_final_v2
 
 Implementarea curenta consta in calcularea pozitiilor prin care trebuie sa treaca
-robotul pentru a acoperi aria din interiorul camarei.
+robotul pentru a acoperi aria din interiorul camerei.
 Robotul va avea o traiectorie de spirala, incepand de la unul dintre colturile
-camerei si deplasandu-se catre centru.
+camerei si deplasandu-se catre centru, urmand laturile poligonului dat.
 
-Primul pas este pozitionarea robotului intr-unul dintre colturile poligonului
+Primul pas este pozitionarea robotului intr-unul din colturile poligonului
 prin intermediul functiei init() din structura Robot.
 
 Robotul retine un poligon pe care trebuie sa il parcurga, care se micsoreaza cu
 fiecare latura parcursa. In urma micsorarii poligonului unele colturi ajung sa dispara
 (sunt decupate), acestea raman totusi in poligon, dar sunt suprapuse cu colturi deja
-existente. Astfel se poate ajunge in situatia in care poligonul sa ajunga la forma
-de patrat, dar sa contina 8 colturi.
+existente. (Astfel se poate ajunge in situatia in care poligonul sa ajunga la forma
+de patrat, dar sa contina 8 colturi.)
 
 In deplasarea catre urmatorul colt, robotul tine cont de aria ramasa libera din dreptul
 coltului si face un pas suplimentar pentru completarea acestei arii (daca are loc de peretii
 camerei). De asemenea, robotul tine cont si de colturile decupate in urma micsorarii ariei
-si efectueaza pasi suplimentari pentru acoperirea acestora daca este nevoie.
+si efectueaza pasi suplimentari pentru acoperirea acestora daca este nevoie (compensare).
 
 Robotul se opreste atunci cand toate colturile poligonului se suprapun,
 cand raman cu o singura dreapta (care de altfel nu reprezinta o arie) 
